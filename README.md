@@ -12,4 +12,4 @@ current rating can be found in dashbord html code (screenshot below)
 
 ![dashboard source code fragment](view-source.png)
 
-you can find yours by opening view-source tab and searching for `pendo.initialize`
+you can find yours by opening view-source tab and searching for `tester_quality_rating`
