@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Return UT score
 // @namespace   Violentmonkey Scripts
-// @match       https://app.usertesting.com/my_dashboard/available_tests_v3
+// @match       https://app.usertesting.com/my_dashboard/*
 // @grant       none
 // @version     1.1
 // @author      pacjo
