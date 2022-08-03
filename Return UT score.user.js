@@ -12,13 +12,9 @@ setTimeout(function () {
 
     // Calculate values
     
-    let current_rating = document.body.textContent.match(/"tester_quality_rating":.+?(?=,)/)[0].substr(document.body.textContent.match("tester_quality_rating")[0].length + 3)
-    let account_id = document.body.textContent.match(/"account":{"id":.+?(?=})/)[0].substr(document.body.textContent.match("\"account\":{\"id\":")[0].length)
-    let tests_completed = document.body.textContent.match(/"total_tests_completed":.+?(?=,)/)[0].substr(document.body.textContent.match("total_tests_completed")[0].length + 3)
-    
-    //document.getElementsByClassName("t-ghost mb-0x")[0].innerText = document.getElementsByClassName("t-ghost mb-0x")[0].innerText.substring(1, document.getElementsByClassName("t-ghost mb-0x")[0].innerText = document.getElementsByClassName("t-ghost mb-0x")[0].innerText.length - 1) + ": " + document.getElementsByClassName("sr-only")[1].innerText.substring(8, 11)
-    //document.getElementsByClassName("t-ghost mb-0x")[0].innerText = document.getElementsByClassName("t-ghost mb-0x")[0].innerText.substring(0, document.getElementsByClassName("t-ghost mb-0x")[0].innerText = document.getElementsByClassName("t-ghost mb-0x")[0].innerText.length) + ": " + current_rating
-  
+    let current_rating = document.body.textContent.match(/"tester_quality_rating":.+?(?=,)/)[0].substring(document.body.textContent.match("tester_quality_rating")[0].length + 3)
+    let account_id = document.body.textContent.match(/"account":{"id":.+?(?=})/)[0].substring(document.body.textContent.match("\"account\":{\"id\":")[0].length)
+    let tests_completed = document.body.textContent.match(/"total_tests_completed":.+?(?=,)/)[0].substring(document.body.textContent.match("total_tests_completed")[0].length + 3)
   
     
     // Extended menu
